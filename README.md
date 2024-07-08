@@ -22,6 +22,7 @@
               docker-compose run web python manage.py migrate
  
 7. make sure these command make images inside docker  desktop application  
+
                 i) codemon-web  size --1.11 GB approx
    
                 ii) postgres    size   450 MB approx
