@@ -1,17 +1,26 @@
 "# CodeMonk" 
 "Steps to run this project"
-    1. git clone : https://github.com/TRahulT/CodeMonk.git 
-    2. After succussful clone Open the project in any IDE ( vscode, pycharm or any other ) 
-    4. Start the Docker Desktop application 
-    3. open the terminal  in IDE (VSCode) and type  docker-compose command -> docker-compose run web python manage.py migrate 
-    4. next command -> docker-compose run web python manage.py makemigrations
-    5. next command -> docker-compose run web python manage.py migrate
-    6. make sure these command make images inside docker  desktop application  
+
+1. git clone : https://github.com/TRahulT/CodeMonk.git
+    
+2. After succussful clone Open the project in any IDE ( vscode, pycharm or any other )
+   
+3. Start the Docker Desktop application
+   
+4. open the terminal  in IDE (VSCode) and type  docker-compose command -> docker-compose run web python manage.py migrate
+   
+5. next command -> docker-compose run web python manage.py makemigrations
+   
+6. next command -> docker-compose run web python manage.py migrate
+ 
+7. make sure these command make images inside docker  desktop application  
                 i) codemon-web  size --1.11 GB approx 
                 ii) postgres    size   450 MB approx 
                 iii) check migrate and migration command  reflect succussfully
-    7. next command -> docker-compose run web python manage.py createsuperuser
-    8. last step --> docker-compose up 
+   
+8. next command -> docker-compose run web python manage.py createsuperuser
+   
+9. last step --> docker-compose up 
     
 "Open the admin panel first "
      --> http://127.0.0.1:8000/admin/
