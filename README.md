@@ -5,7 +5,7 @@
 
        git clone https://github.com/TRahulT/CodeMonk.git
     
-2. After succussfull clone , Open the project in any IDE ( vscode, pycharm or any other )
+2. After the succussfull cloning , Open the project in any IDE ( vscode, pycharm or any other )
    
 3. Start the Docker Desktop application
    
