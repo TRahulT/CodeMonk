@@ -1,6 +1,6 @@
 "# CodeMonk" 
-"Steps to run this project"\n
-    1. git clone : https://github.com/TRahulT/CodeMonk.git \n
+"Steps to run this project"
+    1. git clone : https://github.com/TRahulT/CodeMonk.git 
     2. After succussful clone Open the project in any IDE ( vscode, pycharm or any other ) 
     4. Start the Docker Desktop application 
     3. open the terminal  in IDE (VSCode) and type  docker-compose command -> docker-compose run web python manage.py migrate 
