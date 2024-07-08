@@ -14,38 +14,47 @@
 6. next command -> docker-compose run web python manage.py migrate
  
 7. make sure these command make images inside docker  desktop application  
-                i) codemon-web  size --1.11 GB approx 
-                ii) postgres    size   450 MB approx 
+                i) codemon-web  size --1.11 GB approx
+   
+                ii) postgres    size   450 MB approx
+   
                 iii) check migrate and migration command  reflect succussfully
    
-8. next command -> docker-compose run web python manage.py createsuperuser
+9. next command -> docker-compose run web python manage.py createsuperuser
    
-9. last step --> docker-compose up 
+10. last step --> docker-compose up 
     
 "Open the admin panel first "
-     --> http://127.0.0.1:8000/admin/
-         ---> click on CustomUser --> create a User mannual  for example  name = Ram and email = ram@gmail.com 
-         Note -->  Please Don't think Why you are  doing this mannual , its just because of Security purpose because we can access the "CustomUserCreate" API without 
+
+--> http://127.0.0.1:8000/admin/
+
+---> click on CustomUser --> create a User mannual  for example  name = Ram and email = ram@gmail.com 
+
+Note -->  Please Don't think Why you are  doing this mannual , its just because of Security purpose because we can access the "CustomUserCreate" API without 
                   a Token
-        ---> make sure the Custom User is Created successfully
+---> make sure the Custom User is Created successfully
 
 "For testing the REST API'S open POSTMAN" :
-     -> I used TokenAuthentication Here: for the  API's  by creating A Middleware.py file
-     Steps :
-            1) http://127.0.0.1:8000/customuser-login/
-                      i) request -> POST 
+     
+-> I used TokenAuthentication Here: for the  API's  by creating A Middleware.py file
+
+Steps :
+
+1) http://127.0.0.1:8000/customuser-login/
+       i) request -> POST 
                       ii) {
                               "name":"Ram",
                               "email":"ram@gmail.com"   # case senstive 
                             }
-            2) it will return the Response :
+2) it will return the Response :
                        {
                         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3MjA0OTg2NzIuNTg4NDA2fQ.0V-sVBC_-snXePUuJpjrX1LOmRTj3dmFhqSpuOsuzQw",
                         "message": "CustomUser logged in successfully.",
                         "is_log": true,
                         "username": "Ram"
                         }
-            3) Use this Token to access all the other API's 
+   
+3) Use this Token to access all the other API's 
 
 "For Upload the TEXT "
             -> make a new POST https Request in POSTMAN 
