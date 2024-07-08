@@ -1,7 +1,7 @@
 "# CodeMonk" 
 "Steps to run this project"
 
-1. git clone :
+1. git clone : 
 
        git clone https://github.com/TRahulT/CodeMonk.git
     
