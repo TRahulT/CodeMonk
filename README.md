@@ -41,7 +41,7 @@
      -> http://127.0.0.1:8000/admin/
 ---> click on CustomUser --> create a User mannual  for example  name = Ram and email = ram@gmail.com 
 
-Note -->  Please Don't think Why you are  doing this mannual , its just because of Security purpose because we can access the "CustomUserCreate" API without 
+Note -->  Please Don't think Why you are  doing this mannually , its just because of Security purpose because we can't access the "CustomUserCreate" API without 
                   a Token
 ---> make sure the Custom User is Created successfully
 
