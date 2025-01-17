@@ -4,6 +4,8 @@ from django.conf import settings
 from django.http import JsonResponse
 from django.urls import reverse
 
+# this is comment
+
 
 class TokenAuthenticationMiddleware:
     def __init__(self, get_response):
